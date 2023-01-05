@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView,Image } from 'react-native'
+import { View, Text, SafeAreaView,Image, TextInput } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import {
@@ -43,9 +43,19 @@ const HomeScreen = () => {
             </View>
             <UserIcon size={35} color="#00CCBB"/>
         </View>
+        
+            {/* search */}
+            <View>
+                <View>
+                    {/* <SearchIcon/> */}
+                    {/* <TextInput/> */}
+                </View>
+
+                {/* <AdjustmentsIcon color="#00CCBB"/> */}
+            </View>
       </Text>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default HomeScreen;
