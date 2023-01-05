@@ -1,11 +1,18 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
+
 
 const HomeScreen = () => {
+    useLayoutEffect(()=>{
+        navigation.setOptions({
+            headerShown: false,
+        });
+    },[]);
+
   return (
-    <View>
-      <Text>HomeScreen</Text>
-    </View>
+    <SafeAreaView>
+      <Text classname="text-red-500">HomeScreen</Text>
+    </SafeAreaView>
   )
 }
 
