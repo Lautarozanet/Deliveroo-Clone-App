@@ -4,8 +4,8 @@ import { useNavigation } from '@react-navigation/native';
 import {
     UserIcon,
     ChevronDownIcon,
-    SearchIcon,
-    AdjustmentsIcon,
+    MagnifyingGlassCircleIcon,
+    AdjustmentsVerticalIcon,
 } from "react-native-heroicons/outline";
 
 const HomeScreen = () => {
@@ -46,12 +46,13 @@ const HomeScreen = () => {
         
             {/* search */}
             <View>
-                <View>
-                    {/* <SearchIcon/> */}
-                    {/* <TextInput/> */}
+                <View className="flex-row space-x-2 flex-1 bg-gray-200 p-3">
+                    < MagnifyingGlassCircleIcon color="gray" size={20}/>
+                    <TextInput placeholder='Restaurants and cuisines'
+                    keyboardType='default'/>
                 </View>
 
-                {/* <AdjustmentsIcon color="#00CCBB"/> */}
+                <AdjustmentsVerticalIcon color="#00CCBB"/>
             </View>
       </Text>
     </SafeAreaView>
