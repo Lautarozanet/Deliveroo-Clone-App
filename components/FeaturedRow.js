@@ -4,7 +4,8 @@ import { ArrowRightIcon } from 'react-native-heroicons/outline'
 import RestaurantCard from './RestaurantCard'
 
 
-const FeaturedRow = ({title, description, featuredCategory, id}) => {
+const FeaturedRow = ({title, description, id}) => {
+   
   return (
     <View>
      <View className="mt-4 flex-row items-center justify-between px-4">
